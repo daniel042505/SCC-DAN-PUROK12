@@ -47,7 +47,7 @@ public class activities {
   System.out.print("How many activities would you like to add?:  ");
         int act = sc.nextInt();
         sc.nextLine();  
-
+//oten
         for (int i = 1; i <= act; i++) {
             System.out.println("Enter details for activities:");
             
