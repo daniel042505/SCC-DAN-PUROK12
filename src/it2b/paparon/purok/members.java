@@ -52,7 +52,7 @@ public class members {
         sc.nextLine();  
 
         for (int i = 1; i <= numberOfMembers; i++) {
-            System.out.println("Enter details for member " + i + ":");
+            System.out.println("Enter details for members: ");
 
             System.out.print("Enter First Name: ");
             String fname = sc.nextLine();
@@ -60,7 +60,7 @@ public class members {
             String lname = sc.nextLine();
             System.out.print("Enter Age: ");
             int age = sc.nextInt();
-            sc.nextLine();  // Clear the buffer
+            sc.nextLine();  
             System.out.print("Enter Gender: ");
             String gender = sc.nextLine();
             System.out.print("Enter Status: ");

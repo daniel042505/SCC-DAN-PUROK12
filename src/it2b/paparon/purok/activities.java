@@ -44,6 +44,13 @@ public class activities {
 
     
      private static void addActivity(Scanner sc) {
+  System.out.print("How many activities would you like to add?:  ");
+        int act = sc.nextInt();
+        sc.nextLine();  
+
+        for (int i = 1; i <= act; i++) {
+            System.out.println("Enter details for activities:");
+            
         System.out.print("Enter Activity Name: ");
         String activityName = sc.nextLine();
         System.out.print("Enter Activity Date: ");
@@ -56,7 +63,7 @@ public class activities {
         conf.addRecord(sql, activityName, activityDate, activityLocation);
     }
 
-
+     }
     public static void viewActivities(Scanner sc) {
         System.out.println("|---------------------------------------------|");
         System.out.println("1. View All Activities");
@@ -101,7 +108,7 @@ public class activities {
     private static void updateActivities(Scanner sc) {
         System.out.print("Enter the Activity ID to Update: ");
         int id = sc.nextInt();
-        sc.nextLine();  // Clear the buffer
+        sc.nextLine();  
         System.out.print("Enter new Activity Name: ");
         String newName = sc.nextLine();
         System.out.print("Enter new Activity Date: ");
