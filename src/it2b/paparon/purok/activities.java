@@ -93,7 +93,7 @@ public class activities {
     config conf = new config();
     conf.viewRecords(sqlQuery, columnHeaders, columnNames);
 }
-
+// carlo gwapo
  
     private static void viewActivityById(int id) {
         String sqlQuery = "SELECT * FROM tbl_activities WHERE s_id = ?";
